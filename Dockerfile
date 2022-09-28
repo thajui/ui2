@@ -1,5 +1,5 @@
 FROM centos:latest
-MAINTAINER v@mail.com
+MAINTAINER mymail@mail.com
 RUN yum install -y httpd \ 
 zip\
 unzip
