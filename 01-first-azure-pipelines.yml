@@ -12,10 +12,10 @@ pool:
 stages:
 - stage: build
   jobs:
-  - job: first job
+  - job: firstjob
     steps:
     - bash: echo build first job 
-  - job: second job 
+  - job: secondjob 
     steps:
     - bash: echo build second job
 - stage: deploy 
@@ -23,12 +23,12 @@ stages:
   - build
   - testQA
   jobs:
-  - job: deploy job one
+  - job: deployjobone
     steps: 
     - bash: echo deploy Job 
 - stage: testQA
   dependsOn: build
   jobs:
-  - job: QA first Job 
+  - job: QAfirstJob 
     steps: 
     - bash: echo QA first job 
